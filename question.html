@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/js/trivia.js"></script>
+</head>
+
+<body>
+    <form action="/add_question" method="POST">
+        <label>Level:</label>
+        <select name="level">
+            <option value="homer">Homer</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+         </select>
+        <br>
+        <label>Question:</label><input type="text" name="question" /><br>
+        <label>Correct Answer:</label><input type="text" name="ans" /><br>
+        <label>Option 1:</label><input type="text" name="ans1" /><br>
+        <label>Option 2:</label><input type="text" name="ans2" /><br>
+        <label>Option 3:</label><input type="text" name="ans3" /><br>
+        <label>Option 4:</label><input type="text" name="ans4" /><br>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
