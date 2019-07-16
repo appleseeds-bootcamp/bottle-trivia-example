@@ -32,6 +32,9 @@ def add_question():
 
 @get('/get_question')
 def get_question():
+    if not "level" in request.query:
+        return "Please give me a level!!!!!!!!!"
+    
     level = request.query['level']
     index = randint(0, len(questions[level]) - 1)
     return json.dumps(questions[level][index])
